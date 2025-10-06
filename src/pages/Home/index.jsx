@@ -1,6 +1,8 @@
 import '@/assets/css/index.css'
 import settingsSliders from "@/assets/images/settings-sliders.png"
 import cheeseburger from "@/assets/images/cheeseburger.png"
+import footer from "@/assets/images/footer.png"
+import add from "@/assets/images/add.png"
 
 const Home = () => {
   return (
@@ -33,37 +35,71 @@ const Home = () => {
             <div className="h-full px-7 flex items-center bg-[#F3F4F6] text-[#6A6A6A] rounded-2xl">Drink</div>
           </div>
         </nav>
-        <section>
-          <div className="w-44 h-56 rounded-3xl shadow-[0_6px_17px_rgba(0,0,0,0.13)] relative">
-            <img className="w-28 h-32 mx-auto" src={cheeseburger} alt="" />
-            <div className='ml-3 text-base mb-2'>
-              <span className='block font-bold'>Cheeseburger</span>
-              <span className='block border-b'>Wendy's Burger</span>
+        <section className="flex-1">
+          <div className="flex gap-5 flex-wrap">
+            <div className="w-44 h-56 rounded-3xl shadow-[0_6px_17px_rgba(0,0,0,0.13)] relative">
+              <img className="w-28 h-32 mx-auto" src={cheeseburger} alt="" />
+              <div className='ml-3 text-base mb-2'>
+                <span className='block font-bold'>Cheeseburger</span>
+                <span className='block border-b'>Wendy's Burger</span>
+              </div>
+              <div className='w-11 h-5 ml-3 flex items-center justify-center'>
+                <i className="fa-solid fa-star text-[#FFD43B]"></i>
+                <span>4.9</span>
+              </div>
+              <i className="fa-regular fa-heart absolute bottom-4 right-3"></i>
             </div>
-            <div className='w-11 h-5 ml-3 flex items-center justify-center'>
-              <i className="fa-solid fa-star text-[#FFD43B]"></i>
-              <span>4.9</span>
+            <div className="w-44 h-56 rounded-3xl shadow-[0_6px_17px_rgba(0,0,0,0.13)] relative">
+              <img className="w-28 h-32 mx-auto" src={cheeseburger} alt="" />
+              <div className='ml-3 text-base mb-2'>
+                <span className='block font-bold'>Cheeseburger</span>
+                <span className='block border-b'>Wendy's Burger</span>
+              </div>
+              <div className='w-11 h-5 ml-3 flex items-center justify-center'>
+                <i className="fa-solid fa-star text-[#FFD43B]"></i>
+                <span>4.9</span>
+              </div>
+              <i className="fa-regular fa-heart absolute bottom-4 right-3"></i>
             </div>
-            <i className="fa-regular fa-heart absolute bottom-4 right-3"></i>
+            <div className="w-44 h-56 rounded-3xl shadow-[0_6px_17px_rgba(0,0,0,0.13)] relative">
+              <img className="w-28 h-32 mx-auto" src={cheeseburger} alt="" />
+              <div className='ml-3 text-base mb-2'>
+                <span className='block font-bold'>Cheeseburger</span>
+                <span className='block border-b'>Wendy's Burger</span>
+              </div>
+              <div className='w-11 h-5 ml-3 flex items-center justify-center'>
+                <i className="fa-solid fa-star text-[#FFD43B]"></i>
+                <span>4.9</span>
+              </div>
+              <i className="fa-regular fa-heart absolute bottom-4 right-3"></i>
+            </div>
+            <div className="w-44 h-56 rounded-3xl shadow-[0_6px_17px_rgba(0,0,0,0.13)] relative">
+              <img className="w-28 h-32 mx-auto" src={cheeseburger} alt="" />
+              <div className='ml-3 text-base mb-2'>
+                <span className='block font-bold'>Cheeseburger</span>
+                <span className='block border-b'>Wendy's Burger</span>
+              </div>
+              <div className='w-11 h-5 ml-3 flex items-center justify-center'>
+                <i className="fa-solid fa-star text-[#FFD43B]"></i>
+                <span>4.9</span>
+              </div>
+              <i className="fa-regular fa-heart absolute bottom-4 right-3"></i>
+            </div>
           </div>
         </section>
-        <section>
-          <div className="w-44 h-56 rounded-3xl shadow-[0_6px_17px_rgba(0,0,0,0.13)] relative">
-            <img className="w-28 h-32 mx-auto" src={cheeseburger} alt="" />
-            <div className='ml-3 text-base mb-2'>
-              <span className='block font-bold'>Cheeseburger</span>
-              <span className='block border-b'>Wendy's Burger</span>
-            </div>
-            <div className='w-11 h-5 ml-3 flex items-center justify-center'>
-              <i className="fa-solid fa-star text-[#FFD43B]"></i>
-              <span>4.9</span>
-            </div>
-            <i className="fa-regular fa-heart absolute bottom-4 right-3"></i>
-          </div>
-        </section>
-
       </div>   
-      <footer></footer>
+      <footer>
+        <div className="relative">
+          <img className="w-full h-20" src={footer} alt="" />
+          <div className="absolute inset-0 flex justify-around items-center text-2xl">
+            <i className="fa-regular fa-house text-white"></i>
+            <i className="fa-regular fa-user text-white"></i>
+            <i className="fa-regular fa-comment text-white"></i>
+            <i className="fa-solid fa-heart text-white"></i>
+          </div>
+        </div>
+        <img className="w-24 h-24 fixed left-1/2 -translate-x-1/2 bottom-16" src={add} alt="" />
+      </footer>
    </div>
    </>
   )
