@@ -33,7 +33,7 @@ const FoodDetail = () => {
             <span className='block text-xs mb-1'>Portion</span>
             <div className="flex gap-5">
               <button className="w-10 h-10 bg-[#EF2A39] rounded-xl" onClick={() => setAmount(prev => Math.max(prev - 1, 1))}>
-                <span className="text-white font-bold">一</span>
+                <span className="text-white font-bold">-</span>
               </button>
               {amount}
               <button onClick={() => setAmount(prev => prev + 1)}><i class="fa-solid fa-plus bg-[#EF2A39] text-white rounded-2xl w-10 h-10 inline-flex items-center justify-center"></i></button>
