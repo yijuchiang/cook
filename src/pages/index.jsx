@@ -1,5 +1,5 @@
 import Home from "./Home";
-import ProductDetail from "./ProductDetail";
+import FoodDetail from "./FoodDetail";
 import NotFound from "./NotFound";
 
-export { Home, ProductDetail, NotFound };
+export { Home, FoodDetail, NotFound };
