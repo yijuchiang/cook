@@ -31,7 +31,7 @@ const FoodDetail = () => {
           <span className='block text-xs mb-1'>Portion</span>
           <div className="flex gap-5 items-center">
             <button className="w-10 h-10 bg-[#EF2A39] rounded-xl" onClick={() => setAmount(prev => Math.max(prev - 1, 1))}>
-              <span className="text-white font-bold">—</span>
+              <span className="text-white font-black">—</span>
             </button>
             {amount}
             <button className="bg-[#EF2A39] text-white rounded-xl w-10 h-10 inline-flex items-center justify-center" onClick={() => setAmount(prev => prev + 1)}><i className="fa-solid fa-plus"></i></button>
@@ -41,7 +41,7 @@ const FoodDetail = () => {
       {/* button */}
       <div className='flex justify-between items-center gap-3 h-16'>
         <span className="inline-block w-24 leading-[64px] text-center tracking-wider text-[#FFFFFF] bg-[#EF2A39] rounded-2xl">$8.24</span>
-        <button className="w-60 h-full text-[#FFFFFF] bg-[#3C2F2F] rounded-2xl shadow-[0_9px_30px_rgba(0,0,0,0.25)]">ORDER NOW</button>
+        <button className="w-60 h-full text-[#FFFFFF] bg-[#3C2F2F] rounded-2xl shadow-[0_9px_30px_rgba(0,0,0,0.25)]" onClick={() => navigate(`/payment`)}>ORDER NOW</button>
       </div>
     </>
   )

@@ -20,8 +20,10 @@ const Layout = () => {
             <img className="w-full h-20" src={Footer} alt="" />
             <div className="absolute inset-0 flex justify-around items-center text-2xl">
               <i className="fa-regular fa-house text-white"></i>
-              <i className="fa-regular fa-user text-white"></i>
-              <i className="fa-regular fa-comment text-white"></i>
+              <div className="w-60 flex justify-between">
+                <i className="fa-regular fa-user text-white"></i>
+                <i className="fa-regular fa-comment text-white"></i>
+              </div>
               <i className="fa-solid fa-heart text-white"></i>
             </div>
           </div>

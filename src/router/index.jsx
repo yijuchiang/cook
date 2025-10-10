@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Home, FoodDetail, NotFound } from "@/pages/index";
+import { Home, FoodDetail, NotFound, OrderConfirmation, Payment } from "@/pages/index";
 import Layout from "@/components/Layout"
 
 const router = createBrowserRouter([
@@ -19,7 +19,15 @@ const router = createBrowserRouter([
         path: '*',
         element: <NotFound/>
       }
-    ] 
+    ]
+  },
+  {
+    path: '/payment',
+    element: <Payment/>
+  },
+  {
+    path: '/orderConfirmation',
+    element: <OrderConfirmation/>
   }
 ])
 
