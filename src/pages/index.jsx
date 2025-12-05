@@ -4,7 +4,7 @@ import NotFound from "./NotFound";
 import OrderFinish from "./OrderFinish"
 import Payment from "./Payment";
 import Profile from "./Profile"
-import Likes from "./Likes"
+import Likes from "./Likes/index.jsx"
 import Login from "./Login"
 
 export { Home, FoodDetail, NotFound, OrderFinish, Payment, Profile, Likes, Login };

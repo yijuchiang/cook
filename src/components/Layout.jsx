@@ -43,7 +43,7 @@ const Layout = () => {
                 )}
                 <i className="fa-regular fa-comment text-white"></i>
               </div>
-              <Link to='./Likes'>
+              <Link to='/likes'>
                 <i className="fa-solid fa-heart text-white"></i>
               </Link>
             </div>
